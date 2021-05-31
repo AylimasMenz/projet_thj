@@ -1,0 +1,103 @@
+QPushButton#toggle_but {
+  background-image: url(icons/cil-menu.png);
+  background-color: transparent;
+}
+QPushButton:hover#toggle_but {
+  background-color: rgb(70, 140, 140);
+}
+QPushButton:pressed#toggle_but {
+  background-color: rgb(80, 150, 150);
+}
+
+QFrame#frame_barresSup {
+  background: rgb(55, 125, 125);
+}
+QFrame#barreLater_frame {
+  background: rgb(65, 135, 135);
+}
+
+QPushButton#home_button{
+  background-image: url(icons/home-3-line.png);
+  background-color: rgb(135, 135, 65);
+  background-position: left center;
+  color: white;
+  border-left: 28px solid rgb(135, 135, 65);
+  text-align: left;
+  padding-left: 45px;
+}
+QPushButton:hover#home_button {
+  background-color: rgb(145, 145, 75);
+  border-left: 28px solid rgb(145, 145, 75);
+}
+QPushButton:pressed#home_button {
+  background-color: rgb(155, 155, 85);
+  border-left: 28px solid rgb(155, 155, 85);
+}
+
+QPushButton#affichage_principal {
+  background-image: url(icons/projector-line.png);
+  background-color: transparent;
+  background-position: left center;
+  color: white;
+  border-left: 28px solid rgb(65, 135, 135);
+  text-align: left;
+  padding-left: 45px;
+}
+QPushButton:hover#affichage_principal {
+  background-color: rgb(70, 140, 140);
+  border-left: 28px solid rgb(70, 140, 140);
+}
+QPushButton:pressed#affichage_principal {
+  background-color: rgb(80, 150, 150);
+  border-left: 28px solid rgb(80, 150, 150);
+}
+
+QPushButton#parametres {
+  background-image: url(icons/cil-settings.png);
+  background-color: transparent;
+  background-position: left center;
+  color: white;
+  border-left: 28px solid rgb(65, 135, 135);
+  text-align: left;
+  padding-left: 45px;
+}
+QPushButton:hover#parametres {
+  background-color: rgb(70, 140, 140);
+  border-left: 28px solid rgb(70, 140, 140);
+}
+QPushButton:pressed#parametres {
+  background-color: rgb(80, 150, 150);
+  border-left: 28px solid rgb(80, 150, 150);
+}
+
+QPushButton#plus {
+  background-image: url(icons/add-line1.png);
+  background-color: transparent;
+  background-position: center;
+  color: transparent;
+}
+QPushButton:hover#plus {
+  background-color: lightgrey;
+}
+QPushButton:pressed#plus {
+  background-color: darkslategrey;
+}
+QPushButton#valider {
+  background-color: transparent;
+  color: black;
+}
+QPushButton:hover#valider {
+  background-color: lightgrey;
+}
+QPushButton:pressed#valider {
+  background-color: darkslategrey;
+}
+QPushButton {
+  background-position: center;
+  background-repeat: no-reperat;
+  border: none;
+}
+
+QLabel{
+  color: black;
+}
