@@ -1,9 +1,9 @@
+import copy
 import math
 import os
-
-from IPython.core.inputtransformer import tr
 from PySide2 import QtWidgets, QtGui, QtCore
 from PySide2.QtWidgets import QTableWidgetItem
+import global_modul
 
 from strategie_dominante import *
 
@@ -14,6 +14,8 @@ class DefinitionFonctionsDUtilite(QtWidgets.QFrame):
         self.appelant = appelant
 
         self.t = t
+        global nb_strategies_pour_chaque_joeurs
+        global_modul.nb_strategies_pour_chaque_joeurs = copy.deepcopy(t)
 
         self.tableau = QtWidgets.QTableWidget()
 
@@ -72,12 +74,14 @@ class DefinitionFonctionsDUtilite(QtWidgets.QFrame):
 
             table_utilites[tuple(j)] = tuple(u)
 
+        global fonctions_dutilite
+        global_modul.fonctions_dutilite = copy.deepcopy(table_utilites)
+
         self.appelant.appelant.appelant.aller_a_affichage_principal()
 
         self.appelant.appelant.appelant.frame_principale.affichage.in2()
-        for j in range(len(self.t)):
-            print("coupe joueur " + str(j+1))
-            print(coupe_de_la_matrice(j+1, self.t[j], table_utilites))
-            print("strategie dominante du joueur " + str(j+1))
-            print(strategie_dominante(j+1, self.t[j], table_utilites))
+
+
+
+
 

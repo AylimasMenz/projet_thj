@@ -15,6 +15,7 @@ class SaisieJoueursStrategies(QtWidgets.QFrame):
 
         self.frames = []
         self.frames.append(FrameJoueur(self))
+        self.frames.append(FrameJoueur(self))
         self.frames.append(self.frame_ajout)
 
         self.ponereLayout()
