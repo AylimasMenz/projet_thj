@@ -35,14 +35,8 @@ class TrameInf(QFrame):
         self.affichage_principal.clicked.connect(self.aller_a_affichage_principal)
         bouton_box.addWidget(self.affichage_principal)
 
-        self.parametres = QPushButton()  # Heuristiques
-        self.parametres.setObjectName("parametres")
-        self.parametres.setMinimumHeight(70)
-        self.parametres.clicked.connect(self.aller_a_parametres)
-        bouton_box.addWidget(self.parametres)
-
         button_frame.setLayout(bouton_box)
-        button_frame.setMaximumHeight(210)
+        button_frame.setMaximumHeight(140)
 
         button_frame_complementaire = QFrame()
 
@@ -128,23 +122,6 @@ class TrameInf(QFrame):
                                            "background-color: rgb(85, 155, 155);"
                                            "border-left: 28px solid rgb(85, 155, 155);"
                                            "}")
-            self.parametres.setStyleSheet("QPushButton#parametres {"
-                                          "background-image: url(icons/cil-settings.png);"
-                                          "background-color: rgb(65, 135, 135);"
-                                          "background-position: left center;"
-                                          "color: white;"
-                                          "border-left: 28px solid rgb(65, 135, 135);"
-                                          "text-align: left;"
-                                          "padding-left: 45px;"
-                                          "}"
-                                          "QPushButton:hover#parametres {"
-                                          "background-color: rgb(75, 145, 145);"
-                                          "border-left: 28px solid rgb(75, 145, 145);"
-                                          "}"
-                                          "QPushButton:pressed#parametres {"
-                                          "background-color: rgb(85, 155, 155);"
-                                          "border-left: 28px solid rgb(85, 155, 155);"
-                                          "}")
 
     def aller_a_affichage_principal(self):
         if self.frame_principale.currentWidget() != self.frame_principale.affichage:
@@ -183,78 +160,5 @@ class TrameInf(QFrame):
                                           "background-color: rgb(155, 155, 85);"
                                           "border-left: 28px solid rgb(155, 155, 85);"
                                           "}")
-            self.parametres.setStyleSheet("QPushButton#parametres {"
-                                                   "background-image: url(icons/cil-settings.png);"
-                                                   "background-color: rgb(65, 135, 135);"
-                                                   "background-position: left center;"
-                                                   "color: white;"
-                                                   "border-left: 28px solid rgb(65, 135, 135);"
-                                                   "text-align: left;"
-                                                   "padding-left: 45px;"
-                                                   "}"
-                                                   "QPushButton:hover#parametres {"
-                                                   "background-color: rgb(75, 145, 145);"
-                                                   "border-left: 28px solid rgb(75, 145, 145);"
-                                                   "}"
-                                                   "QPushButton:pressed#parametres {"
-                                                   "background-color: rgb(85, 155, 155);"
-                                                   "border-left: 28px solid rgb(85, 155, 155);"
-                                                   "}")
+
             #self.affichage_principal.setStyleSheet("color: red")
-
-
-
-    def aller_a_parametres(self):
-        if self.frame_principale.currentWidget() != self.frame_principale.parametres_menu:
-            self.frame_principale.setCurrentWidget(self.frame_principale.parametres_menu)
-            self.home_button.setStyleSheet("QPushButton#home_button {"
-                                          "background-image: url(icons/home-3-line.png);"
-                                            "background-color: rgb(65, 135, 135);"
-                                            "background-position: left center;"
-                                            "color: white;"
-                                            "border-left: 28px solid rgb(65, 135, 135);"
-                                            "text-align: left;"
-                                            "padding-left: 45px;"
-                                            "}"
-                                            "QPushButton:hover#home_button {"
-                                            "background-color: rgb(75, 145, 145);"
-                                            "border-left: 28px solid rgb(75, 145, 145);"
-                                            "}"
-                                            "QPushButton:pressed#home_button {"
-                                            "background-color: rgb(85, 155, 155);"
-                                            "border-left: 28px solid rgb(85, 155, 155);"
-                                            "}")
-            self.affichage_principal.setStyleSheet("QPushButton#affichage_principal {"
-                                          "background-image: url(icons/projector-line.png);"
-                                            "background-color: rgb(65, 135, 135);"
-                                            "background-position: left center;"
-                                            "color: white;"
-                                            "border-left: 28px solid rgb(65, 135, 135);"
-                                            "text-align: left;"
-                                            "padding-left: 45px;"
-                                            "}"
-                                            "QPushButton:hover#affichage_principal {"
-                                            "background-color: rgb(75, 145, 145);"
-                                            "border-left: 28px solid rgb(75, 145, 145);"
-                                            "}"
-                                            "QPushButton:pressed#affichage_principal {"
-                                            "background-color: rgb(85, 155, 155);"
-                                            "border-left: 28px solid rgb(85, 155, 155);"
-                                            "}")
-            self.parametres.setStyleSheet("QPushButton#parametres {"
-                                          "background-image: url(icons/cil-settings.png);"
-                                            "background-color: rgb(135, 135, 65);"
-                                            "background-position: left center;"
-                                            "color: white;"
-                                            "border-left: 28px solid rgb(135, 135, 65);"
-                                            "text-align: left;"
-                                            "padding-left: 45px;"
-                                            "}"
-                                            "QPushButton:hover#parametres {"
-                                            "background-color: rgb(145, 145, 75);"
-                                            "border-left: 28px solid rgb(145, 145, 75);"
-                                            "}"
-                                            "QPushButton:pressed#parametres {"
-                                            "background-color: rgb(155, 155, 85);"
-                                            "border-left: 28px solid rgb(155, 155, 85);"
-                                            "}")

@@ -38,13 +38,11 @@ class TrameSup(QFrame):
             widthExtended = maxExtend
             self.mainWindow.trameInf.home_button.setText("Home")
             self.mainWindow.trameInf.affichage_principal.setText("Show")
-            self.mainWindow.trameInf.parametres.setText("Parametres")
 
         else:
             widthExtended = standard
             self.mainWindow.trameInf.home_button.setText("")
             self.mainWindow.trameInf.affichage_principal.setText("")
-            self.mainWindow.trameInf.parametres.setText("")
 
         self.animation = QtCore.QPropertyAnimation(self.mainWindow.trameInf.barreLater_frame, b"minimumWidth")
         self.animation.setDuration(300)

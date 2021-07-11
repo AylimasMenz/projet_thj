@@ -62,6 +62,7 @@ class FrameJoueur(QtWidgets.QFrame):
         self.setMaximumWidth(150)
 
         self.plus()
+        self.plus()
 
 
     def plus(self):

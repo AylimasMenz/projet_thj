@@ -74,14 +74,14 @@ class DefinitionFonctionsDUtilite(QtWidgets.QFrame):
 
             table_utilites[tuple(j)] = tuple(u)
 
+        # table_utilites est un dictionnaire dont les clés
+        # dont les clés sont les profils de strategie
+        # et les elements les utilités des joueurs
+        # sous forme de tuples
+
         global fonctions_dutilite
         global_modul.fonctions_dutilite = copy.deepcopy(table_utilites)
 
         self.appelant.appelant.appelant.aller_a_affichage_principal()
 
         self.appelant.appelant.appelant.frame_principale.affichage.in2()
-
-
-
-
-

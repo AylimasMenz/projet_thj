@@ -6,7 +6,7 @@ def coupe_de_la_matrice(joueur, nombre_de_strategies, fonctions_dutilite):
     for i in range(nombre_de_strategies):
         utilite_du_joueur.append({})
         for x in fonctions_dutilite:
-            x1 = list(x)
+            x1 = list(x)    #s-i    (vecteur strategies des autres joueurs)
             s = x1.pop(joueur-1)
             if s == i+1:
                 utilite_du_joueur[i][tuple(x1)] = fonctions_dutilite[x][joueur-1]   #ou joueur - 1
